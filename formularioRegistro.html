@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<title>Formulario de Registro Regiones y Paises</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- Js vinculados -->
+    <!--script src="http://code.jquery.com/jquery-latest.min.js"></script-->
+    <!--script src="js/responsive.js"></script-->
+
+<div class="group">
+  <form action="registro.php" method="POST">
+  <h2><em>Formulario de Registro Calendario Académico</em></h2>
+  
+      <label for="sede">Sede <span><em>(*)</em></span>      
+	       <select name="sede" class="form-control" required/>
+  	       <option></option>
+  			   <option>Bogotá</option>
+  			   <option>Cundinamarca</option>
+  		     <option>Bucaramanga</option>
+  			   <option>Tunja</option>
+  			   <option>Medellín</option>
+  			   <option>Villavicencio</option>
+		     </select>
+	    </label>
+
+      <label for="programa">Nombre Programa Academico <span><em>(*)</em></span>  <select name="programa" class="form-control" required/>
+           <option></option>
+           <option>Administración de Sistemas</option>
+           <option>Ingenieria Informatica</option>
+           <option>Administración</option>
+           <option>Teologia</option>
+           <option>Ingenieria de Sofware</option>
+           <option>Ingenieria Ambiental</option>
+        </select>
+      </label>
+
+      <label for="semestre">Semestre <span><em>(*)</em></span>  <select name="semestre" class="form-control" required/>
+           <option></option>
+           <option>Primero</option>
+           <option>Segundo</option>
+           <option>Tercero</option>
+           <option>Cuarto</option>
+           <option>Quinto</option>
+           <option>Sexto</option>
+           <option>Septimo</option>
+           <option>Octavo</option>
+           <option>Noveno</option>
+           <option>Décimo</option>
+        </select>
+      </label>
+
+      <label for="materia">Materia <span><em>(*)</em></span>  
+        <select name="materia" class="form-control" required/>
+           <option></option>
+           <option>Lenguaje de Marcaje</option>
+           <option>Desarrollo de Software</option>
+           <option>Metodoligia de la Educación</option>
+           <option>Teologia</option>
+           <option>Antropologia</option>
+           <option>Introduccion a los Sistemas</option>
+           <option>Pedagogia</option>
+           <option>Estadistica</option>
+           <option>Matematicas</option>
+           <option>Diseño de Software</option>
+           <option>Administración Financiera</option>
+        </select>
+      </label>
+ 
+	  
+      <label for="fecha">Fecha <span><em>(*) </em></span> <input type="date" name="fecha" class="form-control" required/></label>
+      
+     
+      <label for="hora_ini">Hora Inicial<span><em>(*) </em></span> <input type="time" name="hora_ini" class="form-control" required/></label> 
+
+      <label for="hora_fin">Hora Inicial<span><em>(*) </em></span> <input type="time" name="hora_fin" class="form-control" required/></label> 
+	  
+	  
+      
+     <center> <input class="form-btn" name="submit" type="submit" value="Suscribirse" /></center>
+    </p>
+  </form>
+</div>
+</body>
+</html>
